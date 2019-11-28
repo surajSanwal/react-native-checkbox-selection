@@ -27,13 +27,14 @@
     "url": "https://github.com/surajSanwal/react-native-checkbox-selection.git/issues"
   },
   "homepage": "https://github.com/surajSanwal/react-native-checkbox-selection.git#readme",
-  "dependencies": {},
+  "dependencies": {
+    "react-native-select-multiple": "2.1.0"
+  },
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
     "react-native-vector-icons": "*",
-    "prop-types": "*",
-    "react-native-select-multiple": "2.1.0"
+    "prop-types": "*"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
