@@ -16,6 +16,11 @@ Using Yarn
 yarn add react-native-checkbox-selection
 ```
 
+## Example
+|Single Select at a time | Select With Title |  Select Without Title|
+| :--------------------- | :--------------------------------------------: |  :------------------------------------------: | 
+|![](images/select_with_out_title.gif)| ![](images/select_with_title.gif)| ![](images/single_select.gif)|
+
 ## Usage
 
 ```js
