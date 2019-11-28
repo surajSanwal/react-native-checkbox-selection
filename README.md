@@ -10,9 +10,9 @@ Using NPM
 npm install react-native-checkbox-selection
 ```
 
-```sh
-
 Using Yarn
+
+```sh
 yarn add react-native-checkbox-selection
 ```
 
@@ -21,7 +21,7 @@ yarn add react-native-checkbox-selection
 ```js
 import React, { Component } from "react";
 import { View } from "react-native";
-import MultiSelectComponent from "react-native-checkbox-selection";
+import MultiSelect from "react-native-checkbox-selection";
 
 const fruits = ["Apples", "Oranges", "Pears"];
 // --- OR ---
@@ -42,7 +42,7 @@ class App extends Component {
   render() {
     return (
       <View>
-        <MultiSelectComponent
+        <MultiSelect
           data={fruits}
           onSelectedItemsChange={onSelectionsChange}
           selectedItems={this.state.selectedFruits}
@@ -60,23 +60,17 @@ export default App;
 
 | Prop                   |                    Default                     |   Type   | Description                                                                                                  |
 | :--------------------- | :--------------------------------------------: | :------: | :----------------------------------------------------------------------------------------------------------- |
-| items                  |                       -                        | `array`  | All items available in the list (array of `string` or `{ label, value }`)                                    |
+| data                  |                       `[]`                        | `array`  | All items available in the list (array of `string` or `{ label, value }`)                                    |
 | selectedItems          |                      `[]`                      | `array`  | The currently selected items (array of `string` or `{ label, value }`)                                       |
-| onSelectionsChange     |                       -                        |  `func`  | Callback called when a user selects or de-selects an item, passed `(selections, item)`                       |
-| keyExtractor           |                    `index`                     |  `func`  | [keyExtractor](https://facebook.github.io/react-native/docs/flatlist.html#keyextractor) for the `FlatList`   |
+| onSelectedItemsChange     |                       -                        |  `func`  | Callback called when a user selects or de-selects an item, passed `(selections)`                       |
 | checkboxSource         |       [image](images/icon-checkbox.png)        | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (unchecked). |
-| selectedCheckboxSource |   [image](images/icon-checkbox-checked.png)    | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (checked).   |
-| flatListProps          |                       {}                       | `object` | Additional props for the flat list                                                                           |
-| style                  | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/scrollview.html#style) for the `FlatList` container.    |
-| rowStyle               | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/view.html#style) for the row container.                 |
-| checkboxStyle          | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/image.html#style) for the checkbox image.               |
-| labelStyle             | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the text label.                    |
-| selectedRowStyle       | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/view.html#style) for the row container when selected.   |
-| selectedCheckboxStyle  | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/image.html#style) for the checkbox image when selected. |
-| selectedLabelStyle     | [default styles](src/SelectMultiple.styles.js) | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the text label when selected.      |
-| renderLabel            |                      null                      |  `func`  | Function for render label.                                                                                   |
-| maxSelect              |                      null                      |  `int`   | Maximum number of selected items                                                                             |
-
+| selectedCheckboxSource |   [image](images/icon-checkbox-checked.png)    | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (checked).   |                              |single | `false` | `bool` | Make an signle selection 
+|disableAutoClose | `false` | `bool` | Disable Automatic Closing funcation 
+|iconDisabled| `false` | `bool` | Disable caret icon
+|enableTitle| `false` | `bool` | enable title for component
+|icon| `caret-down` | `string` | change caret icon
+|containerStyle    | `{}` | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the container label.                
+|styleTextDropdown    | `{}` | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the dropdown text.                
 ## License
 
 [ISC](LICENSE) © Suraj Sanwal
