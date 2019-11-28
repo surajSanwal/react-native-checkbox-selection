@@ -1,6 +1,6 @@
 {
   "name": "react-native-checkbox-selection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A customizables ListView that allows you to select multiple and single rows",
   "main": "lib/index.js",
   "scripts": {
