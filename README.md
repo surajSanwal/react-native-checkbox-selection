@@ -17,9 +17,10 @@ yarn add react-native-checkbox-selection
 ```
 
 ## Example
-|Single Select at a time | Select With Title |  Select Without Title|
-| :--------------------- | :--------------------------------------------: |  :------------------------------------------: | 
-|![](images/select_with_out_title.gif)| ![](images/select_with_title.gif)| ![](images/single_select.gif)|
+
+| Single Select at a time               |         Select With Title         |     Select Without Title      |
+| :------------------------------------ | :-------------------------------: | :---------------------------: |
+| ![](images/select_with_out_title.gif) | ![](images/select_with_title.gif) | ![](images/single_select.gif) |
 
 ## Usage
 
@@ -63,19 +64,20 @@ export default App;
 
 ## Properties
 
-| Prop                   |                    Default                     |   Type   | Description                                                                                                  |
-| :--------------------- | :--------------------------------------------: | :------: | :----------------------------------------------------------------------------------------------------------- |
-| data                  |                       `[]`                        | `array`  | All items available in the list (array of `string` or `{ label, value }`)                                    |
-| selectedItems          |                      `[]`                      | `array`  | The currently selected items (array of `string` or `{ label, value }`)                                       |
-| onSelectedItemsChange     |                       -                        |  `func`  | Callback called when a user selects or de-selects an item, passed `(selections)`                       |
-| checkboxSource         |       [image](images/icon-checkbox.png)        | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (unchecked). |
-| selectedCheckboxSource |   [image](images/icon-checkbox-checked.png)    | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (checked).   |                              |single | `false` | `bool` | Make an signle selection 
-|disableAutoClose | `false` | `bool` | Disable Automatic Closing funcation 
-|iconDisabled| `false` | `bool` | Disable caret icon
-|enableTitle| `false` | `bool` | enable title for component
-|icon| `caret-down` | `string` | change caret icon
-|containerStyle    | `{}` | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the container label.                
-|styleTextDropdown    | `{}` | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the dropdown text.                
+| Prop                   |                  Default                  |   Type   | Description                                                                                                  |
+| :--------------------- | :---------------------------------------: | :------: | :----------------------------------------------------------------------------------------------------------- |
+| data                   |                   `[]`                    | `array`  | All items available in the list (array of `string` or `{ label, value }`)                                    |
+| selectedItems          |                   `[]`                    | `array`  | The currently selected items (array of `string` or `{ label, value }`)                                       |
+| onSelectedItemsChange  |                     -                     |  `func`  | Callback called when a user selects or de-selects an item, passed `(selections)`                             |
+| checkboxSource         |     [image](images/icon-checkbox.png)     | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (unchecked). |
+| selectedCheckboxSource | [image](images/icon-checkbox-checked.png) | `object` | [Image source](https://facebook.github.io/react-native/docs/image.html#source) for the checkbox (checked).   |  | single | `false` | `bool` | Make an signle selection |
+| disableAutoClose       |                  `false`                  |  `bool`  | Disable Automatic Closing funcation                                                                          |
+| iconDisabled           |                  `false`                  |  `bool`  | Disable caret icon                                                                                           |
+| enableTitle            |                  `false`                  |  `bool`  | enable title for component                                                                                   |
+| icon                   |               `caret-down`                | `string` | change caret icon                                                                                            |
+| containerStyle         |                   `{}`                    | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the container label.               |
+| styleTextDropdown      |                   `{}`                    | `object` | [Style](https://facebook.github.io/react-native/docs/text.html#style) for the dropdown text.                 |
+
 ## License
 
-[ISC](LICENSE) © Suraj Sanwal
+© Suraj Sanwal
