@@ -1,6 +1,6 @@
 {
   "name": "react-native-checkbox-selection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A customizables ListView that allows you to select multiple and single rows",
   "main": "lib/index.js",
   "scripts": {
@@ -29,6 +29,9 @@
   "homepage": "https://github.com/surajSanwal/react-native-checkbox-selection.git#readme",
   "dependencies": {
     "react-native-select-multiple": "2.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "react": "*",
